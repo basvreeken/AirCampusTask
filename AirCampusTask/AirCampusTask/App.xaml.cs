@@ -1,4 +1,5 @@
 ﻿using System;
+using AirCampusTask.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,8 +12,8 @@ namespace AirCampusTask
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            // todo: Replace this old way for the new Shell
+            MainPage = new NavigationPage(Resolver.Resolve<MainView>());
         }
 
         protected override void OnStart()

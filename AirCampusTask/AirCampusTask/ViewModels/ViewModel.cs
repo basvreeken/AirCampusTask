@@ -15,7 +15,7 @@ namespace AirCampusTask.ViewModels
             }
         }
         
-        // todo: Abstract the Navigation from the viewmodel.
+        // todo: Abstract the Navigation from the ViewModel.
         public INavigation Navigation { get; set; }
     }
 }

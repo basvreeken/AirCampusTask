@@ -19,6 +19,7 @@ namespace AirCampusTask.Android
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Bootstrapper.Init();
             LoadApplication(new App());
         }
     }
