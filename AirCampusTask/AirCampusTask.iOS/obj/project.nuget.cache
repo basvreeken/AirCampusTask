@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LinC3hG9rr0laIlj6XbcL+guVBB18s0S/d0oE7OJu6CYr3AhvwGndO1XBMRjJgLc1NGn8OY6ThXxjKxbmi1Jpw==",
+  "success": true,
+  "projectFilePath": "/Users/basvreeken/Projects/ProofOfConcept/AirCampusTask/AirCampusTask/AirCampusTask.iOS/AirCampusTask.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/basvreeken/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
