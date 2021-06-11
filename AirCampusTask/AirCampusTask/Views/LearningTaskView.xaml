@@ -11,6 +11,8 @@
     <StackLayout Padding="14">
         <Label Text="Title" />
         <Entry Text="{Binding LearningTask.Title}"/>
+        <Label Text="Instruction" />
+        <Editor Text="{Binding LearningTask.Instruction}"/>
         <DatePicker Date="{Binding LearningTask.Due}"/>
         <StackLayout Orientation="Horizontal">
             <Switch IsToggled="{Binding LearningTask.Completed}"/>

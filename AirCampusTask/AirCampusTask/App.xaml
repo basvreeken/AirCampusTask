@@ -4,9 +4,16 @@
              x:Class="AirCampusTask.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="Blue">#064e83</Color>
+            <Color x:Key="Orange">#f39901</Color>
+            <Color x:Key="LightBlue">#149ee0</Color>
+            <Color x:Key="Purple">#64207e</Color>
+            <Color x:Key="CompletedColor">Green</Color>
+            <Color x:Key="ActiveColor">#64207e</Color>
+            
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="#A25EBB" />
-                <Setter Property="BarTextColor" Value="#FFFFFF" />
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Blue}" />
+                <Setter Property="BarTextColor" Value="{StaticResource Orange}" />
             </Style>
 
             <Style x:Key="FilterButton" TargetType="Button">
@@ -17,9 +24,6 @@
                 <Setter Property="TextColor" Value="Black" />
             </Style>
             
-            <Color x:Key="CompletedColor">Green</Color>
-            <Color x:Key="ActiveColor">Blue</Color>
         </ResourceDictionary>
-
     </Application.Resources>
 </Application>

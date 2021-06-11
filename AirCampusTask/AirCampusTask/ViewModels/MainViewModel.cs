@@ -92,7 +92,7 @@ namespace AirCampusTask.ViewModels
         }
         
         public bool ShowAll { get; set; }
-        public string FilterText => ShowAll ? "All" : "Active";
+        public string FilterText => ShowAll ? "All tasks" : "Active tasks";
 
         public ICommand ToggleFilter => new Command(async () =>
         {
