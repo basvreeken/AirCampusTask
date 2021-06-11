@@ -5,15 +5,15 @@
              x:Class="AirCampusTask.Views.LearningTaskView"
              Title="New Learning Task">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Save" />
+        <ToolbarItem Text="Save" Command="{Binding Save}"/>
     </ContentPage.ToolbarItems>
     
     <StackLayout Padding="14">
         <Label Text="Title" />
-        <Entry />
-        <DatePicker />
+        <Entry Text="{Binding LearningTask.Title}"/>
+        <DatePicker Date="{Binding LearningTask.Due}"/>
         <StackLayout Orientation="Horizontal">
-            <Switch />
+            <Switch IsToggled="{Binding LearningTask.Completed}"/>
             <Label Text="Completed" />
         </StackLayout>
     </StackLayout>

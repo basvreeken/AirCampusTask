@@ -17,6 +17,9 @@ namespace AirCampusTask.Views
             InitializeComponent();
             viewModel.Navigation = Navigation;
             BindingContext = viewModel;
+
+            // todo: Fix this issue with staying selected.
+            TaskBookView.ItemSelected += (s, e) => TaskBookView.SelectedItem = null;
         }
     }
 }

@@ -3,11 +3,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AirCampusTask;assembly=AirCampusTask"
+             xmlns:converters="clr-namespace:AirCampusTask.Converters;assembly=AirCampusTask"
              x:Class="AirCampusTask.Views.MainView"
              Title="AirCampus Task">
     
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:StatusColorConverter x:Key="statusColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" />
+        <ToolbarItem Text="Add" Command="{Binding AddLearningTask}"/>
     </ContentPage.ToolbarItems>
     
     <Grid>
@@ -16,10 +23,43 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         
-        <Button Text="Toggle filter" />
+        <Button Text="{Binding FilterText, StringFormat='Filter: {0}'}" Command="{Binding ToggleFilter}" />
 
         <!-- todo: Experiment with the CollectionView here -->
-        <ListView Grid.Row="1">
+        <ListView Grid.Row="1"
+                  RowHeight="70"
+                  ItemsSource="{Binding TaskBook}"
+                  SelectedItem="{Binding SelectedLearningTask}"
+                  x:Name="TaskBookView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="15,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <BoxView Grid.RowSpan="2"
+                                     BackgroundColor="{Binding LearningTask.Completed, Converter={StaticResource statusColorConverter}}"/>
+                            
+                            <Label Grid.Column="1"
+                                   Text="{Binding LearningTask.Title}"
+                                   FontSize="Large" />
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   Text="{Binding LearningTask.Due}"
+                                   FontSize="Micro" />
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   HorizontalTextAlignment="End"
+                                   Text="Completed"
+                                   IsVisible="{Binding LearningTask.Completed}"
+                                   FontSize="Micro" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
             
         </ListView>
     </Grid>

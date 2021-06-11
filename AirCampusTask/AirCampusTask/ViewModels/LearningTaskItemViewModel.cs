@@ -1,5 +1,7 @@
 using System;
+using System.Windows.Input;
 using AirCampusTask.Models;
+using Xamarin.Forms;
 
 namespace AirCampusTask.ViewModels
 {
@@ -10,8 +12,15 @@ namespace AirCampusTask.ViewModels
             LearningTask = learningTask;
         }
 
+        public ICommand ToggleCompleted => new Command((arg) =>
+        {
+            LearningTask.Completed = !LearningTask.Completed;
+            LearningTaskStatusChanged?.Invoke(this, new EventArgs());
+        });
         public LearningTask LearningTask { get; }
         public event EventHandler LearningTaskStatusChanged;
+        
+        // todo: Remove logic by using a value converter.
         public string StatusText => LearningTask.Completed ? "Reactivate" : "Completed";
         
     }
