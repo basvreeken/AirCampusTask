@@ -4,6 +4,19 @@
              x:Class="AirCampusTask.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#A25EBB" />
+                <Setter Property="BarTextColor" Value="#FFFFFF" />
+            </Style>
+
+            <Style x:Key="FilterButton" TargetType="Button">
+                <Setter Property="Margin" Value="15" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="BorderRadius" Value="6" />
+                <Setter Property="BorderColor" Value="Silver" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            
             <Color x:Key="CompletedColor">Green</Color>
             <Color x:Key="ActiveColor">Blue</Color>
         </ResourceDictionary>
