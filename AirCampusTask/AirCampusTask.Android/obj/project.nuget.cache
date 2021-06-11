@@ -1,9 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "EIoHInfD3ziFNiD5KhGnZj/cW8jFG/mPKSlx7t1rdEkdBu6ZZRFweajaZulhY1KiLygRsogCRAA7D1FO7jHBqQ==",
+  "dgSpecHash": "YcrZ9fON6LZy24yXIHD6LTEBzonJD3eKMQ+/KoVzPYnX7Ay1oheoP9pNbmhweUI6p571/eeepACunNFFzUHfNQ==",
   "success": true,
   "projectFilePath": "/Users/basvreeken/Projects/ProofOfConcept/AirCampusTask/AirCampusTask/AirCampusTask.Android/AirCampusTask.Android.csproj",
   "expectedPackageFiles": [
+    "/Users/basvreeken/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/sqlitepclraw.lib.e_sqlite3.android/2.0.3/sqlitepclraw.lib.e_sqlite3.android.2.0.3.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.3/sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/xamarin.androidx.activity/1.1.0.5/xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/xamarin.androidx.annotation/1.1.0.8/xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/xamarin.androidx.annotation.experimental/1.0.0.8/xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",
