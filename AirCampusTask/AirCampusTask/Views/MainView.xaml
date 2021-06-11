@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AirCampusTask;assembly=AirCampusTask"
+             x:Class="AirCampusTask.Views.MainView"
+             Title="AirCampus Task">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" />
+    </ContentPage.ToolbarItems>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Button Text="Toggle filter" />
+
+        <!-- todo: Experiment with the CollectionView here -->
+        <ListView Grid.Row="1">
+            
+        </ListView>
+    </Grid>
+</ContentPage>
