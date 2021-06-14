@@ -13,7 +13,11 @@
         <Entry Text="{Binding LearningTask.Title}"/>
         <Label Text="Instruction" />
         <Editor Text="{Binding LearningTask.Instruction}"/>
-        <DatePicker Date="{Binding LearningTask.Due}"/>
+        <Label Text="Action" />
+        <Editor Text="{Binding LearningTask.Action}"/>
+        <Label Text="Reaction" />
+        <Editor Text="{Binding LearningTask.Reaction}"/>
+        <!--<DatePicker Date="{Binding LearningTask.Due}"/>-->
         <StackLayout Orientation="Horizontal">
             <Switch IsToggled="{Binding LearningTask.Completed}"/>
             <Label Text="Completed" />
