@@ -40,6 +40,10 @@
               "target": "Package",
               "version": "[6.2.0, )"
             },
+            "Mos.xApi": {
+              "target": "Package",
+              "version": "[0.10.0, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
@@ -85,6 +89,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[6.2.0, )"
+            },
+            "Mos.xApi": {
+              "target": "Package",
+              "version": "[0.10.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

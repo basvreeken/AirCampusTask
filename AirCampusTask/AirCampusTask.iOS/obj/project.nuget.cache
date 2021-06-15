@@ -1,20 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "2nwqgfjDkozuAOdOeElFpwR6y0GcaIDR0hA8QVqtG6OITE4ycMxG680qRltwfZHjPUFY7YUfwRJYS0p8vmEinw==",
+  "dgSpecHash": "ELLg5ZL86nwZEuZPM7BsqwGvz8IN/6Ad/YH9wVkC8S2/gYpDL10C4UY32Hon/m3RXDGWbYUmqq9v8dz5fix3tg==",
   "success": true,
   "projectFilePath": "/Users/basvreeken/Projects/ProofOfConcept/AirCampusTask/AirCampusTask/AirCampusTask.iOS/AirCampusTask.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/basvreeken/.nuget/packages/autofac/6.2.0/autofac.6.2.0.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/fody/6.5.1/fody.6.5.1.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/mos.xapi/0.10.0/mos.xapi.0.10.0.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/propertychanged.fody/3.4.0/propertychanged.fody.3.4.0.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.3/sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/system.componentmodel.annotations/4.6.0/system.componentmodel.annotations.4.6.0.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/system.reflection.typeextensions/4.6.0/system.reflection.typeextensions.4.6.0.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/basvreeken/.nuget/packages/system.security.cryptography.algorithms/4.3.1/system.security.cryptography.algorithms.4.3.1.nupkg.sha512",
     "/Users/basvreeken/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []

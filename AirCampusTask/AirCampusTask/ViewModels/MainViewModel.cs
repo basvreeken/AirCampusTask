@@ -64,7 +64,7 @@ namespace AirCampusTask.ViewModels
 
             if (!ShowAll)
             {
-                learningTasks = learningTasks.Where(l => l.Completed == false).ToList();
+                learningTasks = learningTasks.Where(l => l.Synced == false).ToList();
             }
             
             var learningTaskItemViewModels = learningTasks.Select(l => CreateLearningTaskItemViewModel(l));
@@ -82,7 +82,7 @@ namespace AirCampusTask.ViewModels
         {
             if (sender is LearningTaskItemViewModel learningTaskItemViewModel)
             {
-                if (!ShowAll && learningTaskItemViewModel.LearningTask.Completed)
+                if (!ShowAll && learningTaskItemViewModel.LearningTask.Synced)
                 {
                     TaskBook.Remove(learningTaskItemViewModel);
                 }
@@ -99,5 +99,6 @@ namespace AirCampusTask.ViewModels
             ShowAll = !ShowAll;
             await LoadData();
         });
+        
     }
 }

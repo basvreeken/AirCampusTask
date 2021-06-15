@@ -22,7 +22,7 @@ namespace AirCampusTask.Models
         public string Action { get; set; }
         
         public string Reaction { get; set; }
-        public bool Completed { get; set; }
+        public bool Synced { get; set; }
         public DateTime Due { get; set; }
         
     }

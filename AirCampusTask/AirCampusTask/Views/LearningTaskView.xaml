@@ -8,19 +8,47 @@
         <ToolbarItem Text="Save" Command="{Binding Save}"/>
     </ContentPage.ToolbarItems>
     
-    <StackLayout Padding="14">
-        <Label Text="Title" />
-        <Entry Text="{Binding LearningTask.Title}"/>
-        <Label Text="Instruction" />
-        <Editor Text="{Binding LearningTask.Instruction}"/>
-        <Label Text="Action" />
-        <Editor Text="{Binding LearningTask.Action}"/>
-        <Label Text="Reaction" />
-        <Editor Text="{Binding LearningTask.Reaction}"/>
-        <!--<DatePicker Date="{Binding LearningTask.Due}"/>-->
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Button Text="Start/Stop"
+                BackgroundColor="Gold"
+                TextColor="Black"
+                Command="{Binding StartStop}" >
+        </Button>
+    <StackLayout Grid.Row="1" Padding="14">
+        <Label Text="Title" FontAttributes="Bold"/>
+        <Frame BorderColor="LightGray" HasShadow="False" Padding="0">
+            <Editor Text="{Binding LearningTask.Title}" HeightRequest="70"/>
+            </Frame>
+        <Label Text="Instruction" FontAttributes="Bold"/>
+        <Frame BorderColor="LightGray" HasShadow="False" Padding="0">
+            <Editor Text="{Binding LearningTask.Instruction}" HeightRequest="70"/>
+        </Frame>
+        <Label Text="Action"  FontAttributes="Bold" />
+        <Frame BorderColor="LightGray" HasShadow="False" Padding="0">
+            <Editor Text="{Binding LearningTask.Action}" HeightRequest="70"/>
+        </Frame>
+        <Label Text="Reaction"  FontAttributes="Bold"/>
+        <Frame BorderColor="LightGray" HasShadow="False" Padding="0">
+            <Editor Text="{Binding LearningTask.Reaction}"  HeightRequest="70"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Started on "  FontAttributes="Bold"/>
+            <Label Text="{Binding LearningTask.Started, StringFormat='{0:d MMMM yyyy,  hh:mm:ss}'}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Finished on "  FontAttributes="Bold"/>
+            <Label Text="{Binding LearningTask.Finished, StringFormat='{0:d MMMM yyyy,  hh:mm:ss}'}"/>
+        </StackLayout>
         <StackLayout Orientation="Horizontal">
             <Switch IsToggled="{Binding LearningTask.Completed}"/>
-            <Label Text="Completed" />
+            <Label Text="Synced" />
         </StackLayout>
     </StackLayout>
+        </Grid>
 </ContentPage>

@@ -23,7 +23,6 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         
-        <!--<Button Text="{Binding FilterText, StringFormat='Filter: {0}'}" Command="{Binding ToggleFilter}" />-->
         <Button Text="{Binding FilterText, StringFormat='Filter: {0}'}"
                 BackgroundColor="{Binding ShowAll, Converter={StaticResource statusColorConverter}}"
                 TextColor="White"
@@ -48,6 +47,8 @@
                         <ViewCell.ContextActions>
                             <MenuItem Text="{Binding StatusText}" 
                                       Command="{Binding ToggleCompleted}" />
+                            <MenuItem Text="End task" 
+                                      Command="{Binding ToggleCompleted}" />
                         </ViewCell.ContextActions>
                         
                         <Grid Padding="15,10">
@@ -69,7 +70,7 @@
                             <Label Grid.Column="1"
                                    Grid.Row="1"
                                    HorizontalTextAlignment="End"
-                                   Text="Completed"
+                                   Text="Synced"
                                    IsVisible="{Binding LearningTask.Completed}"
                                    FontSize="Micro"
                                    TextColor="{StaticResource CompletedColor}" />

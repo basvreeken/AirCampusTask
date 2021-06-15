@@ -14,14 +14,15 @@ namespace AirCampusTask.ViewModels
 
         public ICommand ToggleCompleted => new Command((arg) =>
         {
-            LearningTask.Completed = !LearningTask.Completed;
+            LearningTask.Synced = !LearningTask.Synced;
             LearningTaskStatusChanged?.Invoke(this, new EventArgs());
         });
         public LearningTask LearningTask { get; }
         public event EventHandler LearningTaskStatusChanged;
-        
+
         // todo: Remove logic by using a value converter.
-        public string StatusText => LearningTask.Completed ? "Reactivate" : "Completed";
+        public string StatusText => LearningTask.Synced ? "Reactivate" : "Synced";
+        
         
     }
 }
